@@ -17,6 +17,14 @@
 
 - On window we can install by downloading the git.exe file form the official webpage [Install Git For Windows](https://git-scm.com/downloads/win)
 
+  ![](./screenshots/windows-download.png)
+
+- You can also use _winget_ to install by command line in powershell.
+
+  > winget install --id Git.Git -e --source winget
+
+  ![](./screenshots/windows-download-powershell.png)
+
 ### Linux & Unix
 
 - You can follow the instructions and command line code depending on your linux & unix distribution form the official webpage [Install Git For Linux and Unix](https://git-scm.com/downloads/linux)
