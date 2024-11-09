@@ -6,6 +6,7 @@
    - [Windows](#windows)
    - [Linux & Unix](#linux--unix)
    - [MacOS](#mac)
+2. **[Git Profile Setup On Local Machine](#setting-up-git-user-profile)**
 
 ---
 
@@ -32,3 +33,24 @@
 ### Mac
 
 - Mac is also a UNIX based platform. There are several options for installing Git on macOS. You can choose the right option for you form the official webpage [Install Git For MacOS](https://git-scm.com/downloads/mac)
+
+After installation to lookup of your `git` is set up correctly you an use the command `git --version` and verify it.
+
+![](./screenshots/check-git-version.png)
+
+---
+
+## Setting up git user profile on your local machine
+
+You can setup you profile from the command line in order to associate your commits with your corresponding identity. The following identity setup is build upon assuming you have a `Github` account. The command that you will use are:
+
+> git config --global user.name "your Github User Name"
+> git config --global user.email "your Github Email"
+
+After witch you can verify or check the list of users in your machine using the command
+
+> git config --global --list
+
+You can edit them by using the following command
+
+> git config --global --edit
