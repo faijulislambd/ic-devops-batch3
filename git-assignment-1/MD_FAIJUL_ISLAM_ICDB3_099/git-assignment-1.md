@@ -103,10 +103,31 @@ Which means that even if you do changes git won't remember them and you won't be
 
 ![](./screenshots/untracked%20files.png)
 
+#### Tracked Status
+
+As we are using git to control the various versions of our code git needs to track them and to that you can use the **_`git add`_** command. There are two ways of using this command.
+  - The first way to specifiy which file or folder you want to track using the following command.
+    ```
+    git add "Specific File Name"
+    ```
+
+    ![](./screenshots/git-add-specific-file.png)
+
+  - The second way is to track all the file or folder using the following command
+    ```
+    git add .
+    ```
+    ![](./screenshots/git-add-all.png)
+
 Other than tracked and untracted file another term you would often heard using _`git add`_ is _Staged_ & _Unstaged_.
 But what are they?
 Well this terms are only valid for tracked files. Until a tracked file is added using _`git add`_ after edit it's **_Unstaged_** after adding it will be called ***_Staged_**.
 
 ### Git Commit
 
-After adding files to git doesn't mean that git keep a backup of it. For that you have to set markers to let git know lines of code
+After adding files to git doesn't mean that git keep a backup of it. For that you have to set markers to let git know to which till which point it should save the _staged_ files. To do that you would need to use the following commands
+
+```
+git commit -m "Commit Message"
+```
+![](./screenshots/)
