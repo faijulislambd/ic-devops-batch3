@@ -9,6 +9,8 @@
 2. **[Git Profile Setup On Local Machine](#setting-up-git-user-profile-on-your-local-machine)**
 3. **[Git Commands](#git-commands)**
    - [Git Initialize](#git-initialize)
+   - [Git Track](#tracking-files-or-directory)
+   - [Git Commit](#git-commit)
 
 ---
 
@@ -77,3 +79,34 @@ To let git know which directory you want to track you have to initialize it on t
 ![](./screenshots/git-init.png)
 
 > _As a `.` file it may be hidden. So please make sure to enable show hidden files to view the file or write `ls -a` on the bash or terminal on that specific directory._
+
+### Tracking Files or Directory
+
+After you initialize a directory using _`git init`_ all the files and directories in that directory can be tracked by _`git`_.
+Which we can easily verify by using the command
+
+```
+git status
+```
+
+![](./screenshots/git-status.png)
+
+There are two states of the contents in the git initialized directory.
+
+1. **Untracked**
+2. **Tracked**
+
+#### Untracked Status
+
+When ever a new file or directory is added to the git initialized directory they are in an untracked state by default. Meaning although git has located these files or directories their version histories are not tracked by git.
+Which means that even if you do changes git won't remember them and you won't be able to go back to a previous state. Which beats one of the main reasons we use version control systems like git.
+
+![](./screenshots/untracked%20files.png)
+
+Other than tracked and untracted file another term you would often heard using _`git add`_ is _Staged_ & _Unstaged_.
+But what are they?
+Well this terms are only valid for tracked files. Until a tracked file is added using _`git add`_ after edit it's **_Unstaged_** after adding it will be called ***_Staged_**.
+
+### Git Commit
+
+After adding files to git doesn't mean that git keep a backup of it. For that you have to set markers to let git know lines of code
